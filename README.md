@@ -1,18 +1,15 @@
-[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg)]()
-[![npm](https://img.shields.io/npm/v/npm.svg)]()
-
-## react-dialog
+## react-simple-dialog
 
 ## Install
 
-	npm install react-dialog
+	npm install react-simple-dialog
 
 ## Usage
 
 import:
 
-	import Dialog from 'react-dialog';
-	import 'react-dialog/dist/dialog.css';
+	import Dialog from 'react-simple-dialog';
+	import 'react-simple-dialog/dist/dialog.css';
 
 in JSX:
 
