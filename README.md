@@ -1,5 +1,7 @@
 ## react-simple-dialog
 
+Very simple react dialog
+
 ## Install
 
 	npm install react-simple-dialog
