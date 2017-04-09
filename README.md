@@ -1,5 +1,7 @@
 ## react-simple-dialog
 
+<a href="https://nodei.co/npm/react-simple-dialog/"><img src="https://nodei.co/npm/react-simple-dialog.png"></a>
+
 Very simple react dialog
 
 ## Install
