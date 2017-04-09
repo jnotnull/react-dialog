@@ -1,6 +1,6 @@
 ## react-simple-dialog
 
-<a href="https://nodei.co/npm/react-simple-dialog/"><img src="https://nodei.co/npm/react-simple-dialog.png"></a>
+<a href="https://nodei.co/npm/react-simple-dialog/"><img src="https://nodei.co/npm/react-simple-dialog.png?downloads=true&downloadRank=true&stars=true"></a>
 
 Very simple react dialog
 
