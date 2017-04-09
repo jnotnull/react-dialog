@@ -23,8 +23,8 @@ in click:
 
 	this.refs.dialog.show({
       config: {
-        title: '提示信息',
-        tip: '确定取消？'
+        title: 'info',
+        tip: 'confirm？'
       },
       okfunc: function(){
           location.href = "#/ctrldesk"
