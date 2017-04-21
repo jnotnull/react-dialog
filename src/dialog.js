@@ -12,8 +12,9 @@ export default class Dialog extends Component {
 			visible: false,
 
 			config: {
-				title: '提示信息',
-				tip: ''
+				type: props.type || 'confirm',
+				title: 'tip',
+				tip: '',
 			},
 
 			okfunc: null,
@@ -58,10 +59,16 @@ export default class Dialog extends Component {
 					<div className={styles.header}><span className={styles.title}>{this.state.config.title}</span> <span onClick={this.cancelfunc.bind(this)}  className={styles.close}>x</span></div>
 		      		<div className={styles.content}>
 				        {this.state.config.tip}
-					    <div className={styles.buttonarea}>
+					    {(!this.state.config.type || this.state.config.type== 'confirm') && <div className={styles.buttonarea}>
 					    	<button type="button" onClick={this.okfunc.bind(this, this.state.data)} className={styles.btn + ' ' + styles.btnprimary} style={{marginRight: '5px'}}>确定</button>
 					    	<button type="button" onClick={this.cancelfunc.bind(this)} className={styles.btn}>取消</button>
-					    </div>
+					    </div>}
+					    {this.state.config.type == 'error' && <div className={styles.buttonarea}>
+					    	<button type="button" onClick={this.okfunc.bind(this, this.state.data)} className={styles.btn + ' ' + styles.btnprimary} style={{marginRight: '5px'}}>确定</button>
+					    </div>}
+					    {this.state.config.type == 'success' && <div className={styles.buttonarea}>
+					    	<button type="button" onClick={this.okfunc.bind(this, this.state.data)} className={styles.btn + ' ' + styles.btnprimary} style={{marginRight: '5px'}}>确定</button>
+					    </div>}
 					</div>
 		    	</div></div>}
 		    	</div>

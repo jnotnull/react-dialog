@@ -1,6 +1,6 @@
 {
   "name": "react-simple-dialog",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Light-weight and simple dialog component",
   "main": "index.js",
   "scripts": {

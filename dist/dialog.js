@@ -38,7 +38,8 @@ var Dialog = function (_Component) {
 			visible: false,
 
 			config: {
-				title: '提示信息',
+				type: props.type || 'confirm',
+				title: 'tip',
 				tip: ''
 			},
 
@@ -118,7 +119,7 @@ var Dialog = function (_Component) {
 							'div',
 							{ className: _index2.default.content },
 							this.state.config.tip,
-							_react2.default.createElement(
+							(!this.state.config.type || this.state.config.type == 'confirm') && _react2.default.createElement(
 								'div',
 								{ className: _index2.default.buttonarea },
 								_react2.default.createElement(
@@ -130,6 +131,24 @@ var Dialog = function (_Component) {
 									'button',
 									{ type: 'button', onClick: this.cancelfunc.bind(this), className: _index2.default.btn },
 									'\u53D6\u6D88'
+								)
+							),
+							this.state.config.type == 'error' && _react2.default.createElement(
+								'div',
+								{ className: _index2.default.buttonarea },
+								_react2.default.createElement(
+									'button',
+									{ type: 'button', onClick: this.okfunc.bind(this, this.state.data), className: _index2.default.btn + ' ' + _index2.default.btnprimary, style: { marginRight: '5px' } },
+									'\u786E\u5B9A'
+								)
+							),
+							this.state.config.type == 'success' && _react2.default.createElement(
+								'div',
+								{ className: _index2.default.buttonarea },
+								_react2.default.createElement(
+									'button',
+									{ type: 'button', onClick: this.okfunc.bind(this, this.state.data), className: _index2.default.btn + ' ' + _index2.default.btnprimary, style: { marginRight: '5px' } },
+									'\u786E\u5B9A'
 								)
 							)
 						)
